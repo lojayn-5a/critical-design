@@ -1,55 +1,58 @@
-/* styles.css */
-body{
-	background-color: #ede1a6;
-	font-family: Helvetica, Arial, sans-serif;
-	
-}
-.backgroundImage{
-    width: 400px;
-    height: 400px;
-
-    display: block;
-    margin: 60px auto;   /* THIS centers it */
-
-    background-image: url("../img/images.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+body {
+    background-color: #ede1a6;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-h1{
-	color:black;
-	font-size: 48px;
-	text-align: center;
+/* IMAGE BOX */
+.backgroundImage {
+  width: 400px;
+  height: 400px;
+  margin: 60px auto;
+
+  background-image: url("../img/images.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
-.text{
-	width: 50%;
-	margin: 20px auto;
+
+.backgroundImage:hover {
+  background-image: url("../img/multiples.png");
+  cursor: pointer;
 }
-.text *{
-	display: inline-block;
-	width: 48%;
-	margin: 0;
-	padding: 0;
-	vertical-align: middle;
+/* TITLE */
+h1 {
+    color: black;
+    font-size: 48px;
+    text-align: center;
 }
-h2{
-	color:dodgerblue;
-	font-size: 40px;
-	text-align: left;
+
+/* TEXT ROW */
+.text {
+    width: 50%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-h3{
-	font-size: 20px;
-	text-align: right;
+
+h2 {
+    color: dodgerblue;
+    font-size: 40px;
+    margin: 0;
 }
-h3 a:link,
-h3 a:visited {
-	color: dodgerblue;
-	text-decoration: none;
+
+h3 {
+    font-size: 20px;
+    margin: 0;
 }
+
+h3 a {
+    color: dodgerblue;
+    text-decoration: none;
+}
+
 h3 a:hover {
-	color: white;
-}
-.body{
-	font-family: Arial, Helvetica, sans-serif;
+    color: white;
 }
